@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>style.css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #616161; font-style: italic;}
+.s1 { color: #eeffff;}
+.s2 { color: #89ddff;}
+.s3 { color: #ffcb6b;}
+.s4 { color: #b2ccd6;}
+.s5 { color: #eeffff;}
+.s6 { color: #f78c6c;}
+.s7 { color: #82aaff;}
+.s8 { color: #c792ea; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#212121">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+style.css</font>
+</center></td></tr></table>
+<pre><span class="s0">/* Reset default styles */</span>
+<span class="s2">.</span><span class="s3">menu </span><span class="s2">{</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s6">inline-flex</span><span class="s2">;</span>
+    <span class="s4">justify-content</span><span class="s5">: </span><span class="s6">space-between</span><span class="s2">;</span>
+    <span class="s4">align-items</span><span class="s5">: </span><span class="s6">center</span><span class="s2">;</span>
+    <span class="s4">padding</span><span class="s5">: </span><span class="s6">15px 430px</span><span class="s2">; </span><span class="s0">/* Adjust padding as needed */</span>
+    <span class="s4">background-color</span><span class="s5">: </span><span class="s2">#646363; </span><span class="s0">/* Background color for the menu bar */</span>
+<span class="s2">}</span>
+
+<span class="s0">/* Style for the logo */</span>
+<span class="s2">.</span><span class="s3">menu </span><span class="s2">.</span><span class="s3">logo </span><span class="s2">{</span>
+    <span class="s4">flex</span><span class="s5">: </span><span class="s6">0 0 auto</span><span class="s2">; </span><span class="s0">/* Ensures the logo doesn't grow or shrink */</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s3">menu </span><span class="s2">.</span><span class="s3">logo a </span><span class="s2">{</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s6">block</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s3">menu </span><span class="s2">.</span><span class="s3">logo img </span><span class="s2">{</span>
+    <span class="s4">max-width</span><span class="s5">: </span><span class="s6">100px</span><span class="s2">; </span><span class="s0">/* Adjust maximum width of the logo */</span>
+    <span class="s4">height</span><span class="s5">: </span><span class="s6">auto</span><span class="s2">; </span><span class="s0">/* Maintains aspect ratio */</span>
+<span class="s2">}</span>
+
+<span class="s0">/* Basic reset for list styling */</span>
+<span class="s2">.</span><span class="s3">menu-items </span><span class="s2">{</span>
+    <span class="s4">margin</span><span class="s5">: </span><span class="s6">0</span><span class="s2">;</span>
+    <span class="s4">padding</span><span class="s5">: </span><span class="s6">0</span><span class="s2">;</span>
+    <span class="s4">list-style-type</span><span class="s5">: </span><span class="s6">none</span><span class="s2">;</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s6">flex</span><span class="s2">;</span>
+    <span class="s4">align-items</span><span class="s5">: </span><span class="s6">center</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s0">/* Horizontal layout for the menu items */</span>
+<span class="s2">.</span><span class="s3">menu-items li </span><span class="s2">{</span>
+    <span class="s4">margin-right</span><span class="s5">: </span><span class="s6">15px</span><span class="s2">; </span><span class="s0">/* Adjust as needed */</span>
+    <span class="s4">position</span><span class="s5">: </span><span class="s6">relative</span><span class="s2">; </span><span class="s0">/* Required for absolute positioning of dropdown */</span>
+<span class="s2">}</span>
+
+<span class="s0">/* Style for the links */</span>
+<span class="s2">.</span><span class="s3">menu-items li a </span><span class="s2">{</span>
+    <span class="s4">text-decoration</span><span class="s5">: </span><span class="s6">none</span><span class="s2">;</span>
+    <span class="s4">color</span><span class="s5">: </span><span class="s2">#ffffff; </span><span class="s0">/* Text color */</span>
+    <span class="s4">padding</span><span class="s5">: </span><span class="s6">8px 12px</span><span class="s2">; </span><span class="s0">/* Padding around the text */</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s6">block</span><span class="s2">; </span><span class="s0">/* Makes the entire area clickable */</span>
+<span class="s2">}</span>
+
+<span class="s0">/* Style for the dropdown menu */</span>
+<span class="s2">.</span><span class="s3">menu-items </span><span class="s2">.</span><span class="s3">submenu </span><span class="s2">.</span><span class="s3">dropdown </span><span class="s2">{</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s6">none</span><span class="s2">;</span>
+    <span class="s4">position</span><span class="s5">: </span><span class="s6">absolute</span><span class="s2">;</span>
+    <span class="s4">top</span><span class="s5">: </span><span class="s6">100</span><span class="s2">%; </span><span class="s0">/* Position dropdown below the submenu item */</span>
+    <span class="s4">left</span><span class="s5">: </span><span class="s6">0</span><span class="s2">;</span>
+    <span class="s4">background-color</span><span class="s5">: </span><span class="s2">#646363; </span><span class="s0">/* Background color */</span>
+    <span class="s4">box-shadow</span><span class="s5">: </span><span class="s6">0px 8px 16px 0px </span><span class="s7">rgba</span><span class="s2">(</span><span class="s6">0</span><span class="s2">, </span><span class="s6">0</span><span class="s2">, </span><span class="s6">0</span><span class="s2">, </span><span class="s6">0.2</span><span class="s2">); </span><span class="s0">/* Box shadow for dropdown */</span>
+    <span class="s4">z-index</span><span class="s5">: </span><span class="s6">1</span><span class="s2">; </span><span class="s0">/* Ensure dropdown appears above other content */</span>
+    <span class="s4">min-width</span><span class="s5">: </span><span class="s6">160px</span><span class="s2">; </span><span class="s0">/* Adjust width as needed */</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s3">menu-items </span><span class="s2">.</span><span class="s3">submenu</span><span class="s5">:</span><span class="s8">hover </span><span class="s2">.</span><span class="s3">dropdown </span><span class="s2">{</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s6">block</span><span class="s2">; </span><span class="s0">/* Show dropdown on hover */</span>
+<span class="s2">}</span>
+
+<span class="s0">/* Style for dropdown items */</span>
+<span class="s2">.</span><span class="s3">menu-items </span><span class="s2">.</span><span class="s3">submenu </span><span class="s2">.</span><span class="s3">dropdown li </span><span class="s2">{</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s6">block</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s3">menu-items </span><span class="s2">.</span><span class="s3">submenu </span><span class="s2">.</span><span class="s3">dropdown li a </span><span class="s2">{</span>
+    <span class="s4">color</span><span class="s5">: </span><span class="s2">#ffffff; </span><span class="s0">/* Text color */</span>
+    <span class="s4">padding</span><span class="s5">: </span><span class="s6">10px 15px</span><span class="s2">; </span><span class="s0">/* Padding for dropdown items */</span>
+    <span class="s4">display</span><span class="s5">: </span><span class="s6">block</span><span class="s2">; </span><span class="s0">/* Ensure dropdown items are block elements */</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s3">menu-items </span><span class="s2">.</span><span class="s3">submenu </span><span class="s2">.</span><span class="s3">dropdown li a</span><span class="s5">:</span><span class="s8">hover </span><span class="s2">{</span>
+    <span class="s4">background-color</span><span class="s5">: </span><span class="s2">#3d3d3d; </span><span class="s0">/* Background color on hover */</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
