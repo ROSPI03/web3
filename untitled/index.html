@@ -26,6 +26,29 @@
         <li><a href="#contact">Contact</a></li>
     </ul>
 </div>
+<div class = "main_image">
+    <img src="phtos/img_1.png" height="auto" width="auto" alt="Main image">
+</div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let lastScrollTop = 0;
+        const menu = document.querySelector('.menu');
+
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                menu.classList.add('hidden');
+            } else {
+                // Scrolling up
+                menu.classList.remove('hidden');
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    });
+</script>
 </body>
 </html>
