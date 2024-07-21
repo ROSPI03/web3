@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirawn Gallery</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon"  href="phtos/icon.png">
 </head>
 <body>
 <div class="menu">
@@ -23,7 +24,7 @@
                 <li><a href="#nature">NatURe</a></li>
             </ul>
         </li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 </div>
 <div class = "main_image">
@@ -50,5 +51,15 @@
         });
     });
 </script>
+<script>
+    var faviconURL = 'phtos/icon.png'
+
+    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = faviconURL
+    document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+
 </body>
 </html>
